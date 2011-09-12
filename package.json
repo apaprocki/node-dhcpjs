@@ -1,0 +1,15 @@
+{
+    "author": "Andrew Paprocki <andrew@ishiboo.com",
+    "name": "dhcpjs",
+    "homepage": "http://github.com/apaprocki/node-dhcpjs",
+    "description": "DHCP client and server APIs",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/apaprocki/node-ldapjs.git"
+    },
+    "main": "lib/index.js",
+    "engines": {
+        "node": ">=0.5.5"
+    }
+}
