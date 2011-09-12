@@ -1,4 +1,4 @@
-dhcpjs provides native DCHP support in Node.js.
+dhcpjs provides native DHCP support in Node.js.
 
 ## Introduction
 
