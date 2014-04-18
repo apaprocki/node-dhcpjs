@@ -1,3 +1,5 @@
+// Copyright (c) 2014 Andrew Paprocki
+
 var dhcpjs = require('dhcpjs');
 var util = require('util');
 
