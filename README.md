@@ -4,19 +4,14 @@ dhcpjs provides native DHCP support in Node.js.
 
 Currently, this project just provides simple client and server protocol APIs
 which allow an application to consume DHCP messages broadcast to the network
-as JS objects.  There are no external dependencies other than the Buffer API present in Node.js 0.5.5.  At the moment, this allows for DHCP sniffing and
-nothing more.  I decided to release this as the initial version because it
-may still be useful to anyone wishing to perform network DHCP logging.
+as JS objects.
 
-In the future, APIs for sending broadcast/unicast DHCP replies will be added.
-At that point, a fully functioning DHCP lease server and client can be
-implemented as part of the package.  In addition, I am interested in creating
-a DHCP fuzzer and mis-behaved clients to help with testing servers and DoS
-scenarios.
+The module can be used to sniff DHCP traffic, and a skeleton client example
+is provided to show how the module can be used to build a full DHCP client.
 
-I plan on adding documentation once it is possible to send replies. Currently
-traffic can only be inspected by using the createServer()/createClient()
-functions.
+In the future, a full DHCP client and/or server may be implemented as a
+separate module with a dependency on this one.  In addition, I am interested in creating a DHCP fuzzer and mis-behaved clients to help with testing servers and
+DoS scenarios.
 
 ## Usage
 
@@ -65,6 +60,14 @@ When a DHCP message is received, output similar to this will be printed:
          vendorClassIdentifier: 'MSFT 5.0',
          parameterRequestList: [ 1, 15, 3, 6, 44, 46, 47, 31, 33, 249, 43 ],
          vendorOptions: { '220': <Buffer 00> } } }
+
+To see the skeleton DHCP client operate, edit example-client.js and modify the
+ethernet address and client identifier to match those on your computer. Run:
+
+    sudo node example-client.js
+
+This will send a DHCPDISCOVER packet to the network and any proper DHCP server
+will respond with a DHCPOFFER packet that will be printed to the console.
 
 ## Installation
 
