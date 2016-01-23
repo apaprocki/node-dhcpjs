@@ -14,7 +14,7 @@
         "url": "git://github.com/apaprocki/node-dhcpjs.git"
     },
     "dependencies": {
-        "ipv6": "3.1.1"
+        "ip-address": ">=5.0.0"
     },
     "engines": {
         "node": ">=0.10"
