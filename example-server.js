@@ -7,4 +7,4 @@ server.on('message', function(m) {
 server.on('listening', function(address) {
     console.log('listening on ' + address);
 });
-server.bind();
+server.bind(null,1067);
