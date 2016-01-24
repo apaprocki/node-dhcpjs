@@ -7,4 +7,6 @@ server.on('message', function(m) {
 server.on('listening', function(address) {
     console.log('listening on ' + address);
 });
-server.bind(null,1067);
+server.bind();
+// Or to specify the port: (usefull for testing)
+//server.bind(null,1067);
