@@ -4,7 +4,7 @@
     "keywords": [
         "dhcp", "bootp", "dhclient"
     ],
-    "version": "0.4.0",
+    "version": "0.5.0",
     "author": "Andrew Paprocki <andrew@ishiboo.com>",
     "license": "MIT",
     "homepage": "http://github.com/apaprocki/node-dhcpjs",
