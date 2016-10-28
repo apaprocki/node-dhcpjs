@@ -59,7 +59,7 @@ for (var interface in interfaces) {
                     clientIdentifier: 'MyMachine',
                 }
             }
-            var discover = client.createDiscoverPacket(pkt);
+            var discover = client.createPacket(pkt);
             client.broadcastPacket(discover, undefined, function() {
                 console.log('dhcpInform ['+interface+': '+pkt.ciaddr+']: sent');
             });
